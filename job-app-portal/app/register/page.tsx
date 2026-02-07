@@ -16,6 +16,7 @@ import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { User,Keyboard, Mail, Lock, EyeOff, Eye } from "lucide-react";
+import Link from "next/link";
 
 
 const RegisterPage: React.FC = () => {
@@ -195,9 +196,9 @@ const RegisterPage: React.FC = () => {
             {/* Footer */}
             <p className="text-center text-sm text-muted-foreground">
               Already have an account?{" "}
-              <a href="/login" className="text-gray-900 hover:underline">
-                Sign in here
-              </a>
+            <Link href="/login" className="text-gray-900 hover:underline">
+                  Sign in here
+              </Link>
             </p>
           </form>
         </CardContent>
